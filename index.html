@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#17100b">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Para ti 💛">
+  <meta name="format-detection" content="telephone=no">
+  <title>Para ti 💛</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient"></div>
+  <canvas id="petals" aria-hidden="true"></canvas>
+  <canvas id="hearts" aria-hidden="true"></canvas>
+
+  <main class="experience">
+    <section class="screen intro-screen" id="introScreen">
+      <div class="intro-content">
+        <p class="tiny">Tengo algo para ti…</p>
+        <div class="light-orb"></div>
+        <h1>Espera un<br><em>momentito</em> 💛</h1>
+        <p class="hint">Toca la pantalla cuando estés lista/o.</p>
+        <button class="start-button" id="startButton" type="button">
+          <span>✨</span> Abrir mi sorpresa
+        </button>
+      </div>
+    </section>
+
+    <section class="screen flower-screen" id="flowerScreen" aria-hidden="true">
+      <div class="moon"></div>
+
+      <div class="top-message">
+        <p>Para alguien que hace más bonito cualquier día…</p>
+      </div>
+
+      <div class="bouquet-wrap">
+        <div class="sparkles" id="sparkles"></div>
+
+        <div class="bouquet">
+          <div class="flower f1"><i></i></div>
+          <div class="flower f2"><i></i></div>
+          <div class="flower f3"><i></i></div>
+          <div class="flower f4"><i></i></div>
+          <div class="flower f5"><i></i></div>
+          <div class="flower f6"><i></i></div>
+          <div class="flower f7"><i></i></div>
+
+          <div class="stem s1"></div>
+          <div class="stem s2"></div>
+          <div class="stem s3"></div>
+          <div class="stem s4"></div>
+          <div class="stem s5"></div>
+          <div class="leaf l1"></div>
+          <div class="leaf l2"></div>
+          <div class="leaf l3"></div>
+          <div class="leaf l4"></div>
+
+          <div class="paper"></div>
+          <div class="ribbon"></div>
+        </div>
+      </div>
+
+      <div class="final-message">
+        <p class="small-line">Hoy quería regalarte algo sencillo…</p>
+        <h2>Unas flores amarillas para una persona <span>bonita como tú.</span> 💛</h2>
+        <p class="closing">
+          Porque hay personas que merecen detalles que les recuerden
+          lo especiales que son. 🌻
+        </p>
+      </div>
+
+      <button class="replay" id="replayButton" type="button">Volver a vivir el momento ✨</button>
+    </section>
+  </main>
+
+  <!--
+    Coloca tu audio en:
+    assets/flores-amarillas.mp3
+
+    La canción original no está incluida. Usa un archivo que tengas
+    autorizado para reproducir. Si no existe, JavaScript genera
+    un pequeño sonido de demostración.
+  -->
+  <audio id="song" preload="auto" playsinline>
+    <source src="assets/flores-amarillas.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
